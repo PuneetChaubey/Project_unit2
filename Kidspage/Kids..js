@@ -224,6 +224,7 @@
     
 ]
 
+var cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
 kidsData.map(function(elem){
     var box = document.createElement("div");
@@ -244,9 +245,20 @@ kidsData.map(function(elem){
     var button = document.createElement("button");
     button.innerText = "Add to Cart";
     button.setAttribute("class","button-33")
+    button.addEventListener("click",function(){
+      addToCart(elem);
+      button.style.color = "white"
+    })
 
     box.append(img, name, price,button);
 
     document.querySelector("#data").append(box);
 })
 
+
+  function addToCart(elem) {
+    console.log(elem);
+    cartData.push(elem);
+    localStorage.setItem("cart", JSON.stringify(cartData));
+    alert("item added to cart");
+}
