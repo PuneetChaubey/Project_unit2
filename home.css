@@ -1,6 +1,11 @@
 .container{
     display: flex;
     justify-content: space-around;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* overflow: hidden; */
    
 }
 .container1{
@@ -8,6 +13,7 @@
     justify-content: space-around;
     margin-top: 0px;  
     margin: auto;
+    /* overflow: hidden; */
 }
 h5{
     padding-left: 50px;
