@@ -449,7 +449,7 @@ font-size: 14px;
 
     
 }
-#container3>div:nth-child(4)>#one>div:nth-child(2)>div>div:first-child>i{
+#container3>div:nth-child(4)>#one>div:nth-child(2)>div>div:first-child>.fa-cart-arrow-down,.fa-taxi{
     color: red;
     font-size: 40px;
 
@@ -476,3 +476,15 @@ font-size: 14px;
 #container3>div:nth-child(4)>#two>p{
     font-size: 15px;
 }
+#can1>hr+#stick{
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* overflow: hidden; */
+   
+}
+
+
+
+
