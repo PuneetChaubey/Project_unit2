@@ -26,6 +26,82 @@ var mens_data=[
     {img_url:"https://media.kohlsimg.com/is/image/kohls/4485528_ALT?wid=240&hei=240&op_sharpen=1",regulat:"$30.00",sale_price:"$24.99",name:"Men's adidas Designed 2 Move Shorts"},
 
 ]
+window.addEventListener("load", function () {
+    // displayData(appliedJobs);
+    sort(mens_data)
+  });
+var sortby=document.querySelector("#sortby1")
+sortby.addEventListener("change",mysort)
+function rem(price1){
+    sum1=""
+    for(i=0;i<price1.length;i++){
+        if(price1[i]=="$"){
+            continue;
+        }
+        else{
+sum1=sum1+price1[i]
+        }
+
+    }
+    return sum1
+}
+
+function mysort(){
+    var selected=sortby.value
+    console.log(selected)
+    if(selected=="Price-h-t-l"){
+    mens_data.sort(function(a,b){
+       
+        
+        return (rem(b.sale_price)-rem(a.sale_price))
+    })
+    sort(mens_data)
+    }
+    if(selected=="price-l-t-h"){
+        mens_data.sort(function(a,b){
+            return(rem(a.sale_price)-rem(b.sale_price))
+        })
+        sort(mens_data)
+    }
+//     if(selected=="few1"){
+// sort(mens_data)
+//     }
+}
+
+var sortby1=document.querySelector("#show")
+sortby1.addEventListener("change",mysort1)
+function mysort1(){
+var selected1=sortby1.value
+console.log(selected1)
+if(selected1=="5"){
+    var arr=[]
+    for(i=0;i<selected1;i++){
+arr.push(mens_data[i])
+    }
+    sort(arr)
+}
+if(selected1=="10"){
+    var arr1=[]
+    for(j=0;j<selected1;j++){
+arr1.push(mens_data[j])
+    }
+    sort(arr1)
+}
+if(selected1=="15"){
+    var arr2=[]
+    for(k=0;k<selected1;k++){
+arr2.push(mens_data[k])
+    }
+    sort(arr2)
+}
+}
+
+var cartdata=[]
+
+
+// sort(mens_data)
+function sort(mens_data){
+    document.querySelector("#newone").innerHTML=""
 mens_data.map(function(el){
   
 var box=document.createElement("div")
@@ -47,10 +123,23 @@ first.append(price1,price2)
 price2.innerText="regular"+el.regulat
 var name=document.createElement("p")
 name.innerText=el.name
-box.append(im,first,name)
+var cart=document.createElement("button")
+cart.innerText="Add to cart"
+cart.addEventListener("click",addtocart)
+function addtocart(){
+    cart.style.backgroundColor="blue"
+    storedata(el)
+}
+box.append(im,first,name,cart)
 
 })
-
+}
+function storedata(el){
+    console.log(el)
+    cartdata.push(el) 
+    console.log(cartdata)
+    localStorage.setItem("")
+}
 
 var t=document.querySelector("#cat")
     if(t.innerText=="+"){
