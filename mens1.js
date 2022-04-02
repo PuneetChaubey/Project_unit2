@@ -26,6 +26,7 @@ var mens_data=[
     {img_url:"https://media.kohlsimg.com/is/image/kohls/4485528_ALT?wid=240&hei=240&op_sharpen=1",regulat:"$30.00",sale_price:"$24.99",name:"Men's adidas Designed 2 Move Shorts"},
 
 ]
+
 window.addEventListener("load", function () {
     // displayData(appliedJobs);
     sort(mens_data)
