@@ -5,8 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #navbar{
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(8,1fr);
+            grid-template-rows: repeat(1,150px);
+           margin: auto;
+            gap :20px;
+        }
+        #navbar> div{
+            display: flex;
+            justify-content: center;
+           align-items: center;
+            border: 1px solid grey;
+            background-color: teal;
+            padding: 30px;
+            color: white;
+            font-weight: bolder;
+            font-size: larger;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
     <!-- this is base file -->
+    <div id="navbar">
+        <div>$10 & Under</div>
+        <div>$20 & Under</div>
+        <div>Home</div>
+        <div>Women</div>
+        <div>Men</div>
+        <div>Kids</div>
+        <div>Active</div>
+        <div>Shoes</div>
+    </div>
 </body>
 </html>
