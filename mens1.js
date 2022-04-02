@@ -96,7 +96,7 @@ arr2.push(mens_data[k])
 }
 }
 
-var cartdata=[]
+var cartdata=JSON.parse(localStorage.getItem("cart"))||[]
 
 
 // sort(mens_data)
@@ -138,7 +138,7 @@ function storedata(el){
     console.log(el)
     cartdata.push(el) 
     console.log(cartdata)
-    localStorage.setItem("")
+    localStorage.setItem("cart",JSON.stringify(cartdata))
 }
 
 var t=document.querySelector("#cat")
