@@ -6,7 +6,14 @@
     font-family: helvetica, arial, sans-serif;
     ;
 }
-
+#bin{
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+    /* top: 0px; */
+    position: sticky;
+    top: 0;
+}
 #container {
     /* width: 100%; */
     display: grid;
