@@ -15,6 +15,7 @@ function myFn(){
     })
     if(count>0){
         alert("Loggedin  Successfully")
+        window.location.href="home.html"
     }
     else 
       alert("Enterd Wrong Email Or Password")
