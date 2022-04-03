@@ -23,6 +23,10 @@ h5:hover{
     font-weight: bolder;
     color: red;
 }
+.connect{
+    text-decoration: none;;
+    color: black;
+}
 
 
 .bar{
