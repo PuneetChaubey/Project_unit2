@@ -1,6 +1,7 @@
 .container{
     display: flex;
     justify-content: space-around;
+    
    
 }
 .container1{
@@ -185,7 +186,7 @@ h5:hover{
     width: 150px;
     cursor: pointer;
 }
-i{
+.fa-user,.fa-cart-shopping,.fa-circle-arrow-right{
     font-size: 30px;
     padding-top: 30px;
     padding-bottom: 0%;

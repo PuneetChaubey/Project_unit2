@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
+     <!-- starting header -->
+
     <p class="p1"><span class="sp">Free shipping</span> with $75 purchase. <u>details</u> <span class="sp">Fast & free</span> store pickup! <u>details</u> <span class="sp">Take 20% off</span> in store & online with code SHOP20 details</p>
      <hr> 
-     <!-- starting header -->
      <div class="container">
          <div class="container1">
          <h1>KOHL'S</h1>
@@ -72,7 +73,7 @@
        
     </div>
     <div>
-        <h2 style="margin-top: 50px;">Men</h2>
+        <a href="mens.html"><h2 style="margin-top: 50px;">Men</h2></a>
         
     </div>
     <div>
@@ -261,9 +262,10 @@
 <p style="text-align: center;margin-top: 100px;">
     *Earn amount of Kohl's Cash® is approximate and may vary if additional coupons are applied to the purchase transaction. Details & exclusions apply.
 PRICE is approximate, requires that all terms of the offer(s) have been met, and may vary if additional discounts are applied to the purchase transaction and/or if more items are added to your cart. Pricing, promotions and merchandise availability may vary by location and at Kohls.com. “Sale” prices and percentage savings offered are discounts from Kohl's Regular (Reg.) or Original (Orig.) prices, and are valid on selected styles of merchandise unless otherwise indicated. The Reg. or Orig. price of an item is the former or future offered price for the item or a comparable item by Kohl's or another retailer. Actual sales may not have been made at the Reg. or Orig. prices, and intermediate markdowns may have been taken. Orig. prices may not have been in effect during the past 90 days or in all trade areas. Merchandise could be offered at the same or lower “Sale” prices during future promotional events beginning on or after the last day of this advertised event. The following merchandise are excluded from “Entire Stock” promotions in this advertisement: Clearance, Kohl's Cares® cause or other charitable items, Licensed Team, Sephora at Kohl's, emerging brands and Kohl's Online-Exclusive items. In some events, actual savings may exceed the percent savings shown. KOHL'S® and KOHL'S brand names are trademarks of KIN, Inc. ©2022 Kohl's, Inc. With respect to certain Price Break merchandise featured in this advertisement, the "previous sale" price represents sale prices recently advertised in Kohl's print advertising.</p>
-  <h1 style="text-align: center;margin-top: 200px;margin-bottom: -40px;">^</h1>
-<h2 style="text-align: center;">Back to top</h2>
 <!-- footer start -->
+
+  <h1 id="backtotop" style="text-align: center;margin-top: 200px;margin-bottom: -40px;">^</h1>
+<h2 style="text-align: center;">Back to top</h2>
 <div style="background-color:#f0f0f0 ;width: 100%;height: 1000px;">
 <div style="width: 80%; ;margin-left: 150px;display: flex;">
  <div style="margin-left: 10px;margin-top: 20px;">
@@ -346,3 +348,12 @@ PRICE is approximate, requires that all terms of the offer(s) have been met, and
 <!-- footer end -->
 </body>
 </html>
+<script>
+    var s=document.querySelector("#backtotop")
+s.addEventListener("click",totop)
+
+function totop(){
+    window.scroll(0,0)
+}
+
+</script>

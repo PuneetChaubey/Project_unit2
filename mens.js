@@ -14,3 +14,10 @@ for(j=0;j<x.length;j++){
         window.location.href="mens1.html"  
     }
 }
+
+var s=document.querySelector("#backtotop")
+s.addEventListener("click",totop)
+
+function totop(){
+    window.scroll(0,0)
+}
