@@ -9,19 +9,15 @@
 #bin{
     display: flex;
     justify-content: space-between;
-    /* position: fixed; */
-    /* top: 0px; */
     position: sticky;
     top: 0;
 }
 #container {
-    /* width: 100%; */
     display: grid;
 
 
     grid-template-columns: 200px 800px;
     grid-template-rows: 60px 400px 100px 400px;
-    /* margin: auto; */
     gap: 30px;
     justify-content: center;
 }
@@ -78,7 +74,6 @@
     width: 60%;
     height: 100%;
    
-    /* background-size: cover; */
 }
 #container3>div:nth-child(2)>div+div>img,#container3>div:nth-child(3)>div+div>img{
     width: 100%;
@@ -89,16 +84,11 @@
     height: 100%;
     
     
-    /* background-size: cover; */
 }
 #container>div:nth-child(3)>div+div {
     width: 100%;
-    /* display:inline; */
     background-image: url("https://media.kohlsimg.com/is/image/kohls/Mens-dp-20220303-hero-d");
-    /* position: relative; */
-    /* left: px;/ */
     height: 100%;
-    /* background-color: aqua; */
 }
 #container3>div:nth-child(2)>div:first-child{
     width: 40%;
@@ -122,7 +112,6 @@
     width: 370px;
     font-size: 37px;
     line-height: 25px;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-weight: 100;
     letter-spacing: 2px;
 }
@@ -130,8 +119,6 @@
 width: 480px;
 font-size: 28px;
     line-height: 25px;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* font-weight: 100; */
     letter-spacing: 2px;
 }
 #container3>div:nth-child(2)>div:first-child>h1+p{
@@ -165,7 +152,6 @@ font-size: 28px;
     width: 300px;
     font-size: 35px;
     line-height: 25px;
-    /* font-family: Arial, Helvetica, sans-serif; */
     letter-spacing: 2px;
 }
 
@@ -220,7 +206,6 @@ font-size: 28px;
     background-color: #fcfcfb;
     font-weight: bold;
     padding: 18px;
-    /* width: 8%; */
 
 }
 
@@ -278,7 +263,6 @@ font-size: 28px;
     margin-top: 30px;
     grid-template-columns: 200px 800px;
     grid-template-rows: 350px 600px;
-    /* margin: auto; */
     gap: 30px;
     justify-content: center;
 }
@@ -300,7 +284,6 @@ font-size: 28px;
     grid-column: 2/3;
     grid-row: 1/2;
     text-align: center;
-    /* display: flex; */
 }
 
 #container1>div:nth-child(2)>div {
@@ -386,19 +369,14 @@ font-size: 28px;
 
 }
 #container3 {
-    /* width: 100%; */
     display: grid;
 
 
     grid-template-columns: 200px 800px;
     grid-template-rows: 350px 350px 130px ;
-    /* margin: auto; */
     gap: 30px;
     justify-content: center;
 }
-/* #container3>div{
-    /* border: 1px solid black; */
-/* } */ 
 #container3>div:nth-child(1){
     grid-column: 1/2;
     grid-row: 1/4;
@@ -432,7 +410,6 @@ justify-content: space-between;
 #container3>div:nth-child(4)>#one>div:nth-child(1)>h2~span{
 font-weight: bold;
 font-size:16px ;
-/* margin-bottom: 60px; */
 }
 #container3>div:nth-child(4)>#one>div:nth-child(1)>h2{
     margin: 10px;
@@ -451,7 +428,6 @@ font-size: 14px;
 
 #container3>div:nth-child(4)>#one>div:nth-child(2)>div{
     display: flex;
-    /* display: block; */
     
 
     
@@ -473,7 +449,6 @@ font-size: 14px;
     text-align: center;
 }
 #container3>div:nth-child(4)>#two>h2{
-    /* color: white; */
     font-size: 30px;
     margin:10px ;
 }
@@ -488,7 +463,6 @@ font-size: 14px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    /* overflow: hidden; */
    
 }
 

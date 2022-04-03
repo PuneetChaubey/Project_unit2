@@ -64,9 +64,6 @@ function mysort(){
         })
         sort(mens_data)
     }
-//     if(selected=="few1"){
-// sort(mens_data)
-//     }
 }
 
 var sortby1=document.querySelector("#show")
@@ -100,7 +97,6 @@ arr2.push(mens_data[k])
 var cartdata=JSON.parse(localStorage.getItem("cart"))||[]
 
 
-// sort(mens_data)
 function sort(mens_data){
     document.querySelector("#newone").innerHTML=""
 mens_data.map(function(el){
