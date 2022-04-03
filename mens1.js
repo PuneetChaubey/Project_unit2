@@ -396,5 +396,9 @@ div4.append(input4,span4)
    
 }
 
+var s=document.querySelector("#backtotop")
+s.addEventListener("click",totop)
 
-
+function totop(){
+    window.scroll(0,0)
+}
